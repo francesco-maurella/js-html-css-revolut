@@ -4,28 +4,41 @@
   padding: 0;
 }
 
+/* Utility CSS */
 .flx {
   display: flex;
   align-items: center;
 }
+/* / Utility CSS */
 
+/* INTESTAZIONE */
 header.flx {
   width: 850px;
   margin: auto;
   justify-content: space-between;
 }
-
+/* Logo-side */
 .title img {
   max-height: 70px;
 }
+/* / Logo-side */
 
+/* Navmenu-side */
 .nav-menu li{
   list-style: none;
   padding-left: 15px;
+  position: relative;
 }
 
 .section-menu {
   display: none;
+  position: absolute;
   padding: 80px;
   border: 1px solid #000;
 }
+
+.section-menu.active {
+  display: block;
+}
+/* / Navmenu-side */
+/* / INTESTAZIONE */

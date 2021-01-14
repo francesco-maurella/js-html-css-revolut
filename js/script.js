@@ -1,7 +1,20 @@
-$(document).ready(function(){
+// funzione "uscita" dalla sezione, eliminando classe "active"
+function exitSection(){
+  $('.active').removeClass('active');
+}
 
-  &('.nav-menu li').click(function(){
-    $(this).find('.section-menu').toggle();
+$(document).ready(function (){
+
+  // assegnazione classe "active", al click
+  $('.nav-menu li').click(function(){
+    // dichiarazione sezione richiamata
+    var thisSection = $(this).find('.section-menu');
+    // rimuovi/addiziona classe
+    exitSection();
+    thisSection.addClass('active');
+    $(this).mouseleave(function(){
+      exitSection()
+    })
   });
 
 })
