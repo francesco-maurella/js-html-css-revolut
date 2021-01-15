@@ -4,41 +4,111 @@
   padding: 0;
 }
 
+body {
+  background: #FFF;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+body a {
+  text-decoration: none;
+  color: #B2B4B6;
+}
+
+body a:hover {
+  color: #33383D;
+}
+
 /* Utility CSS */
-.flx {
+.flx-cntr {
   display: flex;
   align-items: center;
+}
+
+.txt-col-black, .txt-col-black:hover {
+  color: #000;
+}
+
+.txt-col-white, .txt-col-white:hover {
+  color: #FFF;
 }
 /* / Utility CSS */
 
 /* INTESTAZIONE */
-header.flx {
-  width: 850px;
+header.flx-cntr {
+  max-width: 1400px;
   margin: auto;
   justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
 }
+
+header li {
+  list-style: none;
+}
+
+.title>*, .menu-links, .menu-links>*, .btn {
+  margin: 0 15px;
+}
+
 /* Logo-side */
 .title img {
-  max-height: 70px;
+  max-height: 45px;
 }
 /* / Logo-side */
 
 /* Navmenu-side */
-.nav-menu li{
-  list-style: none;
-  padding-left: 15px;
-  position: relative;
-}
-
 .section-menu {
   display: none;
   position: absolute;
-  padding: 80px;
-  border: 1px solid #000;
+  top: 90%;
+  padding: 10px;
+  line-height: 3em;
+  background: #FFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.section-menu.first {
+  left: 50%;
+}
+
+.section-menu>ul>li {
+  width: 100%;
+  margin: 0 15px;
+}
+
+.section-menu-title {
+  text-transform: uppercase;
+  font-size: 0.45em;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+
+.section-menu-title>img {
+  max-width: 20px;
+  margin-right: 10px;
 }
 
 .section-menu.active {
-  display: block;
+  display: flex;
+}
+
+.btn {
+  background: #ccc;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.btn.gray {
+  background: #E5E7E9;
+}
+
+.btn.black {
+  background: #000;
 }
 /* / Navmenu-side */
 /* / INTESTAZIONE */

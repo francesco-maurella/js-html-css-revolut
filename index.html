@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>JAVASCRIPT - JQUERY [Revoult]</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,44 +15,115 @@
   <body>
 
     <!-- INTESTAZIONE -->
-    <header class="flx">
+    <header class="flx-cntr">
       <!-- Logo-side -->
-      <div class="title flx">
-        <h1>Titolo</h1>
+      <div class="title flx-cntr">
         <img src="img/01-logo.svg" alt="Logo">
+        <a href="#" class="txt-col-black">Personal</a>
+        <a href="#">Business</a>
       </div>
       <!-- /Logo-side -->
 
       <!-- Navmenu-side -->
-      <ul class="nav-menu flx">
-        <li><a href="#">Link 1</a>
-          <!-- sezione 1 -->
-          <ul class="section-menu">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-          </ul>
-          <!-- /sezione 1 -->
-        </li>
-        <li><a href="#">Link 2</a>
-          <!-- sezione 2 -->
-          <ul class="section-menu">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-          </ul>
-          <!-- /sezione 2 -->
-        </li>
-        <li><a href="#">Link 3</a>
-          <!-- sezione 3 -->
-          <ul class="section-menu">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-          </ul>
-          <!-- /sezione 3 -->
-        </li>
-      </ul>
+      <div class="nav-menu flx-cntr">
+        <ul class="menu-links flx-cntr">
+          <!-- sezione Features -->
+          <li><a href="#">Features</a>
+            <div class="section-menu first">
+              <ul>
+                <li class="section-menu-title flx-cntr">
+                  <img src="img/01-sect.jpg" alt="section">
+                  <h2>Account</h2>
+                </li>
+                <li><a href="#">Budget & Analytics</a></li>
+                <li><a href="#">Cards</a></li>
+                <li><a href="#">Junior account</a></li>
+                <li><a href="#">Pockets</a></li>
+              </ul>
+              <ul>
+                <li class="section-menu-title flx-cntr">
+                  <img src="img/02-sect.jpg" alt="section">
+                  <h2>Wealth</h2>
+                </li>
+                <li><a href="#">Crypto</a></li>
+                <li><a href="#">Commodities</a></li>
+                <li><a href="#">Money transfers</a></li>
+                <li><a href="#">Vaults</a></li>
+                <li><a href="#">Savings Vaults</a></li>
+              </ul>
+              <ul>
+                <li class="section-menu-title flx-cntr">
+                  <img src="img/03-sect.jpg" alt="section">
+                  <h2>Payment</h2>
+                </li>
+                <li><a href="#">Money transfers</a></li>
+                <li><a href="#">Group bills</a></li>
+                <li><a href="#">Subscriptions</a></li>
+              </ul>
+              <ul>
+                <li class="section-menu-title flx-cntr">
+                  <img src="img/04-sect.jpg" alt="section">
+                  <h2>Extras</h2>
+                </li>
+                <li><a href="#">Donations</a></li>
+                <li><a href="#">Overseas insaurance</a></li>
+                <li><a href="#">Device insaurance</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Rewards</a></li>
+              </ul>
+            </div>
+          </li>
+          <!-- /sezione Features -->
+          <!-- sezione Plan -->
+          <li><a href="#">Plan</a>
+            <div class="section-menu">
+              <ul>
+                <li><a href="#">Standard</a></li>
+                <li><a href="#">Plus</a></li>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Metal</a></li>
+                <li><a href="#">Compare plans</a></li>
+              </ul>
+            </div>
+          </li>
+          <!-- /sezione Plan -->
+          <!-- sezione About -->
+          <li><a href="#">About us</a>
+            <div class="section-menu">
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Leadership</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Influencers</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Diversity & Inclusion</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </li>
+          <!-- /sezione About -->
+          <!-- sezione Help -->
+          <li><a href="#">Help</a>
+            <div class="section-menu">
+              <ul>
+                <li><a href="#">Help centre</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">System Status</a></li>
+                <li><a href="#">Developer APIs</a></li>
+              </ul>
+            </div>
+          </li>
+          <!-- /sezione Help -->
+        </ul>
+        <!-- bottoni -->
+        <li class="btn gray"><a href="#" class="txt-col-black">Sign In</a></li>
+        <li class="btn black"><a href="#" class="txt-col-white">Get the App</a></li>
+        <!-- /bottoni -->
+      </div>
       <!-- /Navmenu-side -->
     </header>
     <!-- / INTESTAZIONE -->
