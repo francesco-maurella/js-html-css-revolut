@@ -4,6 +4,25 @@
   padding: 0;
 }
 
+body {
+  width: 100vw;
+  max-width: 100%;
+  background: #FFF;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+body a {
+  text-decoration: none;
+  color: #B2B4B6;
+}
+
+body a:hover {
+  color: #33383D;
+}
+
 /* Utility CSS */
 .flx-cntr {
   display: flex;
@@ -18,22 +37,6 @@
   color: #FFF;
 }
 /* / Utility CSS */
-
-/* CONTENITORE PRINCIPALE */
-.wrapper {
-  width: 100vw;
-  max-width: 100%;
-  background: #FFF;
-  font-family: 'Roboto';
-  font-size: 16px;
-  font-weight: 400;
-  color: #000;
-}
-
-.wrapper a {
-  text-decoration: none;
-}
-/* / CONTENITORE PRINCIPALE */
 
 /* INTESTAZIONE */
 header {
@@ -50,15 +53,6 @@ header {
 
 .container li {
   list-style: none;
-}
-
-.container a {
-  text-decoration: none;
-  color: #B2B4B6;
-}
-
-.container a:hover {
-  color: #33383D;
 }
 
 .title>*, .menu-links, .menu-links>*, .btn {
